@@ -1,53 +1,12 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
+function acessarAtividade() {
+  const ra = document.getElementById('ra').value.trim();
+  const senha = document.getElementById('senha').value.trim();
 
-header {
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px 0;
-    text-align: center;
-}
-
-nav ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-}
-
-main {
-    padding: 20px;
-}
-
-.livro {
-    border: 1px solid #ddd;
-    margin: 10px 0;
-    padding: 10px;
-}
-
-.livro img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-}
-
-footer {
-    background-color: #4CAF50;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-}
+  // Verificação simulada (poderia ser melhorada com um banco de dados real)
+  if (ra && senha) {
+    document.getElementById('loginBox').classList.add('hidden');
+    document.getElementById('atividadeBox').classList.remove('hidden');
+  } else {
+    alert("Por favor, preencha o RA e a senha.");
+  }
+  }
