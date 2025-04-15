@@ -1,39 +1,63 @@
-/* Reset CSS */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
-    font-family: Arial, sans-serif;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #eaf3ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
 }
 
-ul {
-    list-style: none;
+.login-box, .content-box {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+h2 {
+  color: #007bff;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
 }
 
 button {
-    border: none;
-    padding: 0;
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
-img {
-    max-width: 100%;
-    height: auto;
+button:hover {
+  background-color: #0056b3;
 }
 
-a {
-    text-decoration: none;
+iframe {
+  width: 100%;
+  height: 200px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 10px;
 }
 
-table {
-    border-collapse: collapse;
-    width: 100%;
+.instrucao {
+  text-align: left;
+  margin-top: 15px;
+  font-size: 14px;
 }
 
-th, td {
-    padding: 8px;
-    text-align: left;
-    border: 1px solid #ddd;
+.hidden {
+  display: none;
 }
